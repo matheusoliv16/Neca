@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  --backgroundColor: #fffcf0;
+  --yellow: #f2d544;
+  --pink: #fa499f;
+  --purple: #653290;
+  --blue: #2f2359;
+}
+
+a{
+  text-decoration: none;
+  color: #0f0f0f;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  color: #2f2359;
+}
+
+h2 {
+  color: #2F2359;
+}
+
+h3 {
+  color: white;
+  font-size: 1.7rem;
+}
+
+h4 {
+  color: #f2d544;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+h5 {
+  color: #f2d544;
+  font-size: 1.25rem;
+}
+
+#tituloHome{
+  color: #fafafa;
+  font-style: none;
+  -webkit-text-stroke-width: none;
+  -webkit-text-stroke-color: #fafafa;
+}
+
+#paragrafoHome{
+  color: #fafafa;
+  font-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 3vh 9vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 3rem;
+  cursor: pointer;
+}
+
+.logo {
+  max-width: 9rem;
+}
+
+/*---------------MAIN---------------*/
+/*----- SEÇÃO "INÍCIO" -----*/
+.home{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-image: url('images/home_bg.jpg'); 
+  background-position: center;
+  background-size: cover;    
+}
+
+.homeText{
+padding-left: 10vh;
+padding-top: 40vh;
+}
+
+.homeText h1{
+font-size: 7vh;
+font-weight: bolder;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #0f0f0f;
+}
+
+.homeText p{
+font-size: 3vh;
+font-weight: bold;
+padding-left: 0.3vh;
+}
+
+.homeText button{
+padding: 2vh 4vh;
+border-radius: 15px;
+border: none;
+font-size: 22px;
+font-weight: 700;
+color: #30275B;
+background-color: #F2D642;
+margin-top: 4vh;
+}
+
+.homeText button:hover{
+cursor: pointer;
+background-color: #eee099;
+transition: 0.5s;
+}
+
+/*----- SEÇÃO "SOBRE NÓS" -----*/
+
+.aboutUs {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUsTitle {
+  color: #2F2359;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 200px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+}
+
+.aboutUsText {
+  flex: 1; 
+  margin-top: -60px;
+  margin-left: 200px;
+  box-sizing: border-box;
+  color: #2F2359;
+}
+
+.aboutUsImage {
+  flex: 1; 
+  margin-top: -60px;
+}
+
+.rebecaImage {
+  max-width: 350px;
+  height: auto; 
+}
+
+.aboutus-background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/logos/pattern1.png'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; 
+    z-index: -1;
+}
+
+/*----- SEÇÃO "SERVIÇOS/PRODUTOS" -----*/
+
+.services{
+  background-color: #fafaaf;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.service{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25vh;
+  padding-bottom: 1vh;
+}
+
+.service img{
+  width: 30vh;
+  background-color: #ffffff;
+  padding: 1vh;
+  margin: 5vh;
+  border-radius: 20vh;
+  border: 0.5vh solid #a19c9c;
+  overflow: visible;
+}
+
+.serviceWithoutOverflow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25vh;
+  padding-bottom: 1vh;
+}
+
+.serviceWithoutOverflow img{
+  width: 30vh;
+  background-color: #ffffff;
+  padding: 1vh;
+  margin: 5vh;
+  border-radius: 20vh;
+  border: 0.5vh solid #a19c9c;
+}
+
+/*----- SEÇÃO "CONTATO" -----*/
+
+.contact{
+    width: 100%;
+    height:100vh;
+    background-color: #fa499f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    background-color: #fafafa;
+    border: 2px solid #2f2359;
+    border-radius: 2rem;
+    width: 40%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    color: #2f2359;
+    font-weight: 700;
+    margin-top: 4vh;
+}
+
+input{
+    width: 70%;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    padding-left: 0.6rem;
+    background-color: transparent;
+    border: 0.08rem solid #2f2359;
+}
+
+input::placeholder{
+    color: #000000;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.enviar{
+    width: 50%;
+    height: 2.5rem;
+    border-radius: 0.7rem;
+    align-self: center;
+    background-color: #2f2359;
+    border: none;
+    color: #ffffff;
+    margin-top: 1.8rem;
+}
+
+/*---------------FOOTER---------------*/
+footer {
+  width: 100%;
+  height: 90vh;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url('images/footer_bg.jpg'); 
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+}
+
+.padrao2 {
+  transform: rotate(90deg);
+  height: 25rem;
+  width: 25rem;
+}
+
+.faleConosco {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.copyright{
+    color: #f2d544;
+    font-size: 0.75rem;
+    padding-top: 0.6rem;
+}
+
+.icon {
+  width: 1.6rem;
+}
+
+.simboloFooter {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
